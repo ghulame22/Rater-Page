@@ -1,0 +1,33 @@
+.svgThankyou {
+  display: flex;
+  justify-content: center;
+}
+.rated {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: hsl(213, 20%, 15%);
+  color: hsl(25, 97%, 53%);
+  font-weight: 200;
+  margin: 0.5rem auto;
+}
+.ratedTitle {
+  text-align: center;
+}
+.ratedPara {
+  text-align: center;
+}
+#exit {
+  width: 2rem;
+  height: 2rem;
+  background: hsl(216, 21%, 33%);
+  float: right;
+  font-weight: 900;
+}
+#exit:hover{
+  color: black;
+  background: hsl(216, 21%, 43%);
+}
