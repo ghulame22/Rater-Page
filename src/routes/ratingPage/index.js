@@ -12,16 +12,14 @@ function Ratings() {
   };
 
   useEffect(() => {
-    const unRated = (e) => {
-      if (e.path[0].tagName !== "BUTTON") {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".rate")) {
         setRate(null);
       }
     };
-
-    document.body.addEventListener("click", unRated);
-
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.body.removeEventListener("click", unRated);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
